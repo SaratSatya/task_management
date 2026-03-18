@@ -6,8 +6,8 @@ A production-ready task management application built with Next.js App Router, Mo
 
 Before handing this repository over, update the placeholders below with your actual links after deployment:
 
-- **Live URL:** `https://<your-deployment-url>`
-- **GitHub Repository:** `https://github.com/<your-org-or-user>/<your-repo>`
+- **Live URL:** `https://task-management-indol-phi.vercel.app/`
+- **GitHub Repository:** `https://github.com/SaratSatya/task_management`
 
 > This repository now includes setup instructions, architecture documentation, deployment guidance, and sample API request/response documentation. The only remaining manual step is publishing the app to your hosting account and replacing the placeholders above with the real URLs.
 
