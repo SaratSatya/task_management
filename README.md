@@ -26,12 +26,10 @@ Create `.env.local` with:
 ```env
 MONGODB_URI=mongodb://127.0.0.1:27017/task-management
 JWT_SECRET=replace-with-a-secure-secret
-TASK_ENCRYPTION_KEY=any-strong-secret-or-64-char-hex-key
+TASK_ENCRYPTION_KEY=64-char-hex-string-for-aes-256-key
 ```
 
-`TASK_ENCRYPTION_KEY` can be any strong secret string. A 64-character hex key also works if you prefer a raw AES-256 key.
-
-Generate a hex key with:
+Generate a valid encryption key with:
 
 ```bash
 node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"

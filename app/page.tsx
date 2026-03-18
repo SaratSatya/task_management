@@ -24,10 +24,10 @@ export default async function HomePage() {
             pagination, and structured API responses built on the existing foundation layer.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link className="inline-flex items-center justify-center rounded-xl bg-sky-400 px-5 py-3 text-sm font-semibold text-slate-950 shadow-sm shadow-sky-500/30 transition hover:bg-sky-300" href="/signup">
+            <Link className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-slate-950" href="/signup">
               Create account
             </Link>
-            <Link className="inline-flex items-center justify-center rounded-xl border border-white/20 px-5 py-3 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5" href="/login">
+            <Link className="rounded-xl border border-white/20 px-5 py-3 text-sm font-medium text-white" href="/login">
               Log in
             </Link>
           </div>
