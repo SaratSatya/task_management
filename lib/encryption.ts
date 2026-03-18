@@ -4,9 +4,16 @@ import { env } from "./env";
 
 const ALGORITHM = "aes-256-cbc";
 const IV_LENGTH = 16;
+const HEX_KEY_LENGTH = 64;
 
 function getKey() {
-  return Buffer.from(env.TASK_ENCRYPTION_KEY, "hex");
+  const secret = env.TASK_ENCRYPTION_KEY.trim();
+
+  if (/^[0-9a-fA-F]+$/.test(secret) && secret.length === HEX_KEY_LENGTH) {
+    return Buffer.from(secret, "hex");
+  }
+
+  return crypto.createHash("sha256").update(secret).digest();
 }
 
 export function encryptText(plainText: string) {
