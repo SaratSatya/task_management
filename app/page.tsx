@@ -24,8 +24,8 @@ export default async function HomePage() {
             pagination, and structured API responses built on the existing foundation layer.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-slate-950" href="/signup">
-              Create account
+            <Link href="/signup" className="rounded-xl border border-white/20 px-5 py-3 text-sm font-medium text-white">
+            Create account
             </Link>
             <Link className="rounded-xl border border-white/20 px-5 py-3 text-sm font-medium text-white" href="/login">
               Log in
